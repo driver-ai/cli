@@ -11,12 +11,7 @@ macOS and Linux:
 curl --proto '=https' --tlsv1.2 -LsSf https://github.com/driver-ai/cli/releases/latest/download/driver-installer.sh | sh
 ```
 
-Windows (PowerShell): download the installer, then run it:
-
-```powershell
-Invoke-WebRequest -Uri "https://github.com/driver-ai/cli/releases/latest/download/driver-installer.ps1" -OutFile "driver-installer.ps1"
-powershell -ExecutionPolicy Bypass -c ".\driver-installer.ps1"
-```
+Windows: run the same command in WSL.
 
 Then sign in with `driver auth login`, and run `driver status` to see what is set up
 and what to do next.
